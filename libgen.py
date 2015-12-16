@@ -2,6 +2,7 @@ import random
 from book import Book
 from library import Library
 
+
 def generate(n):
     lib = Library()
 

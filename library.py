@@ -8,5 +8,8 @@ class Library:
     def books(self):
         return self.__books
 
-    def sort(self, sorter, criteria):
-        self.__books = sorter.sort(self.__books, criteria)
+    def __len__(self):
+        return len(self.__books)
+
+    def __getitem__(self, item):
+        return self.__books[item]

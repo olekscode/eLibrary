@@ -5,7 +5,7 @@ request = Request('http://placekitten.com/')
 try:
     response = urlopen(request)
     kittens = response.read()
-    print kittens[559:1000]
+    print(kittens[559:1000])
 
-except URLError, e:
-    print 'No kittez. Got an error code:', e
+except URLError as e:
+    print('No kittez. Got an error code: %s' % e)

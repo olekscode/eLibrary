@@ -8,11 +8,12 @@ class Book:
     def __getitem__(self, item):
         return {
             'author': self.author,
-            'title' : self.title,
+            'title': self.title,
             'year': self.year,
             'publ': self.publ
         }[item]
-        
+
+    # TODO: Remove this
     def __str__(self):
         string = ("Author:    {0}\n"
                   "Title:     {1}\n"
